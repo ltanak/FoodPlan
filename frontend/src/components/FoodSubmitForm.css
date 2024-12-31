@@ -1,0 +1,79 @@
+.form-control {
+    background-color: #90CF8E;
+    border-width: 0;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.bdy {
+    padding-top: 64px;
+}
+
+/* .form-floating {
+    background-color: #101118;
+    color: #00869e;
+    background: none;
+} */
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C6EDC3;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C6EDC3;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C6EDC3;
+}
+.form-control:focus {
+    background-color: #90CF8E;
+    border-width: 0;
+    color: white;
+    box-shadow: none;
+}
+textarea:focus { 
+    background-color: #101118;
+    border-color: #00869e;
+    color: white;
+    box-shadow: none;
+}
+
+.lgFont {
+    font-size: 48px;
+}
+
+.MdFont {
+    font-size: 36px;
+}
+
+.ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    padding-top: 64px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A7DCA5; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C6EDC3; 
+  }
