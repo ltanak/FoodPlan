@@ -37,8 +37,15 @@ def addMeal():
     
 @app.route('/generateList', methods=['GET', 'POST'])
 def generateList():
+    try:
+        data = request.json
+        # layout for json
+        # {"mealCount: [2, 4, 3], tags: [["quick", "oven"], ["pasta"], ["complex"]]"}
 
-    return -1
+        return -1
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 
 if __name__ == '__main__':
