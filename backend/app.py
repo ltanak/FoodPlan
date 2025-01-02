@@ -42,6 +42,17 @@ def generateList():
         # layout for json
         # {"mealCount: [2, 4, 3], tags: [["quick", "oven"], ["pasta"], ["complex"]]"}
 
+        # approach 1
+        # for each row
+        # return query results for tags
+        # randomly select X amount and put in hashmap
+        # do for all of them, making sure there is no duplicate meals
+
+        # approach 2
+        # for each row return query
+        # get all queries and remove any overlaps of meals
+        # then randomly select from each one - this makes more sense
+
         return -1
     except Exception as e:
         return jsonify({"error": str(e)}), 500
