@@ -50,8 +50,15 @@ def generateList():
 
         # approach 2
         # for each row return query
-        # get all queries and remove any overlaps of meals
+        # get all queries and remove any overlaps / duplicates of meals
         # then randomly select from each one - this makes more sense
+        queries = len(data["mealCount"])
+        mealsSeen = set()
+        for i in range(queries):
+            # perform query here
+            pass
+        
+
 
         return -1
     except Exception as e:
